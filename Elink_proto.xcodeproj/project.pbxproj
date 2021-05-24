@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D24496C265C5E8300383768 /* UserTypeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D24496B265C5E8300383768 /* UserTypeVC.swift */; };
+		2D244974265C61C200383768 /* MainScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D244973265C61C200383768 /* MainScreenVC.swift */; };
 		2D81D9C5265C35620062F556 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D81D9C4265C35620062F556 /* AppDelegate.swift */; };
 		2D81D9C7265C35620062F556 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D81D9C6265C35620062F556 /* SceneDelegate.swift */; };
 		2D81D9C9265C35620062F556 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D81D9C8265C35620062F556 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D24496B265C5E8300383768 /* UserTypeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTypeVC.swift; sourceTree = "<group>"; };
+		2D244973265C61C200383768 /* MainScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenVC.swift; sourceTree = "<group>"; };
 		2D81D9C1265C35620062F556 /* Elink_proto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Elink_proto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D81D9C4265C35620062F556 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D81D9C6265C35620062F556 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				2D81D9CD265C35630062F556 /* Assets.xcassets */,
 				2D81D9CF265C35630062F556 /* LaunchScreen.storyboard */,
 				2D81D9D2265C35630062F556 /* Info.plist */,
+				2D24496B265C5E8300383768 /* UserTypeVC.swift */,
+				2D244973265C61C200383768 /* MainScreenVC.swift */,
 			);
 			path = Elink_proto;
 			sourceTree = "<group>";
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D81D9C9265C35620062F556 /* ViewController.swift in Sources */,
+				2D244974265C61C200383768 /* MainScreenVC.swift in Sources */,
 				2D81D9C5265C35620062F556 /* AppDelegate.swift in Sources */,
+				2D24496C265C5E8300383768 /* UserTypeVC.swift in Sources */,
 				2D81D9C7265C35620062F556 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
