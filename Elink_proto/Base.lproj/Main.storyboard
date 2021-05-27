@@ -102,8 +102,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgfondo" translatesAutoresizingMaskIntoConstraints="NO" id="lr6-xT-Vo8">
-                                <rect key="frame" x="29" y="245" width="355" height="296.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bgfondo" translatesAutoresizingMaskIntoConstraints="NO" id="lr6-xT-Vo8">
+                                <rect key="frame" x="29" y="245" width="355" height="302"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Bienvenido a ELink" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GK4-G3-CMG">
                                 <rect key="frame" x="120" y="2106" width="175" height="24"/>
@@ -112,13 +112,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creado con  en México" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IE2-Rk-xyI">
-                                <rect key="frame" x="101" y="863" width="205" height="0.0"/>
+                                <rect key="frame" x="101" y="842.5" width="205" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8BH-id-wF7">
-                                <rect key="frame" x="72" y="387" width="277" height="39"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8BH-id-wF7">
+                                <rect key="frame" x="72" y="387" width="277" height="51"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Inicia sesión" backgroundImage="bt1-1">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
@@ -127,20 +127,20 @@
                                     <segue destination="kSK-MS-vCh" kind="show" id="Vky-cT-wKu"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Bienvenido a ELink" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fxk-RK-tbu">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenido a ELink" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fxk-RK-tbu">
                                 <rect key="frame" x="95" y="272" width="222" height="26.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Disfruta de una nueva forma de apoyar y divulgar proyectos" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r07-SZ-JZe">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disfruta de una nueva forma de apoyar y divulgar proyectos" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r07-SZ-JZe">
                                 <rect key="frame" x="72" y="314.5" width="277" height="31.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H8v-cb-LoU">
-                                <rect key="frame" x="72" y="438" width="277" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H8v-cb-LoU">
+                                <rect key="frame" x="72" y="462" width="277" height="51"/>
                                 <state key="normal" backgroundImage="bt2">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Registrate">
@@ -178,12 +178,10 @@
                             <constraint firstItem="SKe-76-7AU" firstAttribute="trailing" secondItem="r07-SZ-JZe" secondAttribute="trailing" constant="65" id="bn5-eH-qRe"/>
                             <constraint firstItem="ux0-Dh-Qb8" firstAttribute="top" secondItem="GK4-G3-CMG" secondAttribute="bottom" constant="8" id="c1j-Gz-CyS"/>
                             <constraint firstItem="H8v-cb-LoU" firstAttribute="top" secondItem="8BH-id-wF7" secondAttribute="bottom" constant="12" id="cjB-oS-Lh1"/>
-                            <constraint firstItem="IE2-Rk-xyI" firstAttribute="top" secondItem="lr6-xT-Vo8" secondAttribute="bottom" constant="321.5" id="ehk-qX-6Xu"/>
                             <constraint firstItem="SKe-76-7AU" firstAttribute="trailing" secondItem="Fxk-RK-tbu" secondAttribute="trailing" constant="97" id="gld-Rn-vc5"/>
                             <constraint firstItem="SKe-76-7AU" firstAttribute="trailing" secondItem="YJ5-Qe-DXP" secondAttribute="trailing" constant="167" id="iIU-Le-9cJ"/>
                             <constraint firstItem="ux0-Dh-Qb8" firstAttribute="leading" secondItem="SKe-76-7AU" secondAttribute="leading" constant="95" id="jLz-eL-Wuu"/>
                             <constraint firstItem="Fxk-RK-tbu" firstAttribute="leading" secondItem="SKe-76-7AU" secondAttribute="leading" constant="95" id="n6I-Qu-3sX"/>
-                            <constraint firstItem="IE2-Rk-xyI" firstAttribute="top" secondItem="H8v-cb-LoU" secondAttribute="bottom" constant="346.5" id="n7v-Oq-C3m"/>
                             <constraint firstItem="SKe-76-7AU" firstAttribute="trailing" secondItem="H8v-cb-LoU" secondAttribute="trailing" constant="65" id="nE1-T0-ABi"/>
                             <constraint firstItem="YJ5-Qe-DXP" firstAttribute="leading" secondItem="SKe-76-7AU" secondAttribute="leading" constant="167" id="rpO-b8-rdh"/>
                             <constraint firstItem="IE2-Rk-xyI" firstAttribute="leading" secondItem="SKe-76-7AU" secondAttribute="leading" constant="101" id="sB9-5t-O6e"/>
