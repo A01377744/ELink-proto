@@ -8,7 +8,7 @@
 import UIKit
 
 class ChatVC: UIViewController {
-    let arrChats = ["Martín Lorenzo", "Gabriela López", "Paola Márquez","Jacques Cárdenas"]
+    let arrChats = ["Martín Lorenzo", "Gabriela López", "Paola Márquez","Jacques Cárdenas","Peter Parker","Nolan Grayson","Kraudio Mayoral", "Allen el Alien","Mark Williams", "Héctor Anaya", "Isaac Darkblood"]
 
     @IBOutlet weak var msgTableView: UITableView!
     override func viewDidLoad() {
@@ -36,7 +36,7 @@ extension ChatVC:UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let celda = tableView.dequeueReusableCell(withIdentifier: "celdaChat", for: indexPath)
+        let celda = tableView.dequeueReusableCell(withIdentifier: "celdaChat", for: indexPath) as! CeldaChat
         celda.textLabel?.text = arrChats[indexPath.row]
         return celda
     }

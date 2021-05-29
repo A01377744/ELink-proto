@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QfT-jj-opt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QfT-jj-opt">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -12,10 +12,28 @@
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Elink_proto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeScreenVC" customModule="Elink_proto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SRT-KJ-I13">
+                                <rect key="frame" x="0.0" y="92" width="414" height="712"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WhatsApp Image 2021-05-28 at 19.06.04" translatesAutoresizingMaskIntoConstraints="NO" id="dHb-BM-LRM">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="559"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WhatsApp Image 2021-05-28 at 19.06.04" translatesAutoresizingMaskIntoConstraints="NO" id="vRt-7L-urg">
+                                        <rect key="frame" x="0.0" y="549" width="414" height="584"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="U3B-bR-98X"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="2pv-WX-5gf"/>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -23,7 +41,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1313" y="897"/>
+            <point key="canvasLocation" x="-1313.0434782608697" y="896.65178571428567"/>
         </scene>
         <!--Search-->
         <scene sceneID="QE4-sf-Xky">
@@ -61,8 +79,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationLevel="7" indentationWidth="10" reuseIdentifier="celdaChat" id="p8x-m1-NMJ">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationLevel="7" indentationWidth="10" reuseIdentifier="celdaChat" id="p8x-m1-NMJ" customClass="CeldaChat" customModule="Elink_proto" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="p8x-m1-NMJ" id="2LL-N8-8Cp">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -72,6 +90,13 @@
                                                     <rect key="frame" x="20" y="5" width="45" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mensaje" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Av4-DJ-csP">
+                                                    <rect key="frame" x="89" y="25" width="64" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" systemColor="systemGray3Color"/>
+                                                    <color key="highlightedColor" systemColor="systemGray3Color"/>
+                                                </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -96,7 +121,7 @@
         <!--Profile-->
         <scene sceneID="AfN-Ec-apz">
             <objects>
-                <viewController id="rac-nH-7uK" sceneMemberID="viewController">
+                <viewController id="rac-nH-7uK" customClass="ProfileScreenVC" customModule="Elink_proto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7oW-At-Ldd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -105,7 +130,7 @@
                                 <rect key="frame" x="343" y="765" width="51" height="30"/>
                                 <state key="normal" title="LogOut"/>
                                 <connections>
-                                    <segue destination="QfT-jj-opt" kind="show" id="0XP-3X-G85"/>
+                                    <action selector="logout:" destination="rac-nH-7uK" eventType="touchUpInside" id="Vy1-nU-0ab"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mail del usuario" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDS-Zi-xZx">
@@ -212,15 +237,19 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="Q9f-XL-nVp"/>
+                    <connections>
+                        <segue destination="dgi-xJ-Pea" kind="unwind" identifier="unwindToViewController1" unwindAction="prepareForUnwindWithSegue:" id="WKp-OY-Ruy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XiA-AE-wzB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="dgi-xJ-Pea" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1131.8840579710145" y="896.65178571428567"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="aAC-zN-1J7">
             <objects>
-                <viewController id="u09-7z-YMV" sceneMemberID="viewController">
+                <viewController id="u09-7z-YMV" customClass="ViewController" customModule="Elink_proto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fBI-Xt-RIX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -527,7 +556,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agregar método de pago (opcional)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pMu-WB-YT3">
-                                <rect key="frame" x="20" y="542.5" width="374" height="20.5"/>
+                                <rect key="frame" x="40" y="542.5" width="334" height="20.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -566,6 +595,7 @@
                             <constraint firstItem="v3q-dY-XSs" firstAttribute="top" secondItem="pMu-WB-YT3" secondAttribute="bottom" constant="20" id="4zW-Si-klQ"/>
                             <constraint firstItem="tmX-l5-1iQ" firstAttribute="top" secondItem="htf-hn-bvn" secondAttribute="top" id="5kz-TO-3jk"/>
                             <constraint firstItem="tmX-l5-1iQ" firstAttribute="leading" secondItem="htf-hn-bvn" secondAttribute="leading" id="6dY-cA-DX8"/>
+                            <constraint firstItem="pMu-WB-YT3" firstAttribute="leading" secondItem="htf-hn-bvn" secondAttribute="leading" constant="40" id="C5j-0f-jXe"/>
                             <constraint firstItem="v3q-dY-XSs" firstAttribute="centerX" secondItem="qUv-Vd-9j4" secondAttribute="centerX" id="CkL-o0-2da"/>
                             <constraint firstItem="9Sv-aQ-rZk" firstAttribute="leading" secondItem="htf-hn-bvn" secondAttribute="leading" constant="30" id="CyO-uY-OCO"/>
                             <constraint firstItem="633-6A-gaW" firstAttribute="top" secondItem="9Sv-aQ-rZk" secondAttribute="bottom" constant="20" id="Ebl-sB-FL8"/>
@@ -575,13 +605,12 @@
                             <constraint firstItem="aeO-SM-mjg" firstAttribute="centerX" secondItem="qUv-Vd-9j4" secondAttribute="centerX" id="SS7-Eu-Ddo"/>
                             <constraint firstItem="htf-hn-bvn" firstAttribute="bottom" secondItem="806-JN-BhO" secondAttribute="bottom" constant="70" id="ZE2-YO-vV1"/>
                             <constraint firstItem="Q5C-qF-LWH" firstAttribute="leading" secondItem="htf-hn-bvn" secondAttribute="leading" constant="20" id="blQ-O8-Qa9"/>
-                            <constraint firstItem="pMu-WB-YT3" firstAttribute="leading" secondItem="htf-hn-bvn" secondAttribute="leading" constant="20" id="ccB-aH-7Gv"/>
                             <constraint firstItem="MtT-xT-iNH" firstAttribute="leading" secondItem="htf-hn-bvn" secondAttribute="leading" constant="30" id="dLm-iU-Kki"/>
-                            <constraint firstItem="htf-hn-bvn" firstAttribute="trailing" secondItem="pMu-WB-YT3" secondAttribute="trailing" constant="20" id="fmf-Sk-u49"/>
                             <constraint firstItem="806-JN-BhO" firstAttribute="centerX" secondItem="qUv-Vd-9j4" secondAttribute="centerX" id="gkH-Gt-ouh"/>
                             <constraint firstItem="MtT-xT-iNH" firstAttribute="top" secondItem="htf-hn-bvn" secondAttribute="top" constant="60" id="h6o-M8-c7R"/>
                             <constraint firstItem="9Sv-aQ-rZk" firstAttribute="top" secondItem="aeO-SM-mjg" secondAttribute="bottom" constant="30" id="heH-dX-Re1"/>
                             <constraint firstItem="htf-hn-bvn" firstAttribute="bottom" secondItem="tmX-l5-1iQ" secondAttribute="bottom" constant="424" id="hjX-4B-Drj"/>
+                            <constraint firstItem="htf-hn-bvn" firstAttribute="trailing" secondItem="pMu-WB-YT3" secondAttribute="trailing" constant="40" id="klN-ES-sqP"/>
                             <constraint firstItem="aeO-SM-mjg" firstAttribute="top" secondItem="MtT-xT-iNH" secondAttribute="bottom" constant="8" symbolic="YES" id="mT8-hP-ZfX"/>
                             <constraint firstItem="MtT-xT-iNH" firstAttribute="centerX" secondItem="qUv-Vd-9j4" secondAttribute="centerX" id="qTQ-te-ruo"/>
                             <constraint firstItem="htf-hn-bvn" firstAttribute="trailing" secondItem="Q5C-qF-LWH" secondAttribute="trailing" constant="20" id="rHH-rf-uHV"/>
@@ -781,14 +810,6 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H3G-n0-e4U">
-                                <rect key="frame" x="306" y="602" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="rpe-Wp-UIs" kind="show" id="nwe-fP-ZN6"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AmQ-ma-SHo"/>
                         <color key="backgroundColor" red="0.73045817130000001" green="1" blue="0.91046578310000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -797,7 +818,6 @@
                             <constraint firstItem="bZP-Be-fAG" firstAttribute="leading" secondItem="AmQ-ma-SHo" secondAttribute="leading" constant="87" id="2gY-1m-UDS"/>
                             <constraint firstItem="bZP-Be-fAG" firstAttribute="centerX" secondItem="aBz-S7-cXo" secondAttribute="centerX" id="4C5-hr-5Vb"/>
                             <constraint firstItem="q17-Dj-wB2" firstAttribute="centerX" secondItem="aBz-S7-cXo" secondAttribute="centerX" id="8vI-3h-R5j"/>
-                            <constraint firstItem="AmQ-ma-SHo" firstAttribute="bottom" secondItem="rj3-tx-3UT" secondAttribute="bottom" constant="230" id="FDR-T0-dEB"/>
                             <constraint firstItem="39B-G8-hPj" firstAttribute="leading" secondItem="AmQ-ma-SHo" secondAttribute="leading" constant="20" id="G8w-JA-zOM"/>
                             <constraint firstItem="5Hu-Rp-PhN" firstAttribute="leading" secondItem="AmQ-ma-SHo" secondAttribute="leading" id="GXY-Eg-qeM"/>
                             <constraint firstItem="VL3-xM-upr" firstAttribute="leading" secondItem="AmQ-ma-SHo" secondAttribute="leading" constant="20" id="JU9-Kx-ssq"/>
@@ -971,12 +991,12 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ymW-ah-a3r"/>
+        <segue reference="QbI-rd-X4o"/>
         <segue reference="OHN-f6-7kO"/>
-        <segue reference="8nB-Tr-Icd"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="FondoRegistro-1" width="418" height="350"/>
+        <image name="WhatsApp Image 2021-05-28 at 19.06.04" width="356" height="540"/>
         <image name="bgfondo" width="416" height="414"/>
         <image name="bt1-1" width="499" height="139"/>
         <image name="bt2" width="502" height="139"/>
@@ -1010,6 +1030,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

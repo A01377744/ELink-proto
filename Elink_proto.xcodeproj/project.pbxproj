@@ -16,6 +16,9 @@
 		2D81D9CC265C35620062F556 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D81D9CA265C35620062F556 /* Main.storyboard */; };
 		2D81D9CE265C35630062F556 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D81D9CD265C35630062F556 /* Assets.xcassets */; };
 		2D81D9D1265C35630062F556 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D81D9CF265C35630062F556 /* LaunchScreen.storyboard */; };
+		2DEC44902661B813008B5AFC /* HomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEC448F2661B813008B5AFC /* HomeScreenVC.swift */; };
+		2DEC44932661B83C008B5AFC /* ProfileScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEC44922661B83C008B5AFC /* ProfileScreenVC.swift */; };
+		2DEC44962661B9DE008B5AFC /* CeldaChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEC44952661B9DE008B5AFC /* CeldaChat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		2D81D9CD265C35630062F556 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D81D9D0265C35630062F556 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D81D9D2265C35630062F556 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DEC448F2661B813008B5AFC /* HomeScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenVC.swift; sourceTree = "<group>"; };
+		2DEC44922661B83C008B5AFC /* ProfileScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenVC.swift; sourceTree = "<group>"; };
+		2DEC44952661B9DE008B5AFC /* CeldaChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaChat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,9 @@
 				2D24496B265C5E8300383768 /* UserTypeVC.swift */,
 				2D244973265C61C200383768 /* MainScreenVC.swift */,
 				2D55D43726603F0900761FEC /* ChatVC.swift */,
+				2DEC448F2661B813008B5AFC /* HomeScreenVC.swift */,
+				2DEC44922661B83C008B5AFC /* ProfileScreenVC.swift */,
+				2DEC44952661B9DE008B5AFC /* CeldaChat.swift */,
 			);
 			path = Elink_proto;
 			sourceTree = "<group>";
@@ -147,9 +156,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D55D43826603F0900761FEC /* ChatVC.swift in Sources */,
+				2DEC44962661B9DE008B5AFC /* CeldaChat.swift in Sources */,
 				2D81D9C9265C35620062F556 /* ViewController.swift in Sources */,
+				2DEC44932661B83C008B5AFC /* ProfileScreenVC.swift in Sources */,
 				2D244974265C61C200383768 /* MainScreenVC.swift in Sources */,
 				2D81D9C5265C35620062F556 /* AppDelegate.swift in Sources */,
+				2DEC44902661B813008B5AFC /* HomeScreenVC.swift in Sources */,
 				2D24496C265C5E8300383768 /* UserTypeVC.swift in Sources */,
 				2D81D9C7265C35620062F556 /* SceneDelegate.swift in Sources */,
 			);
